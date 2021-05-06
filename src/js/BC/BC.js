@@ -48,7 +48,7 @@ BC.map.on('load', function () {
 // add Bus stops with image
 BC.addGeojsonStops=function(data){
   BC.map.loadImage(
-    '../src/img/bus_stop.png',
+    '/src/img/bus_stop.png',
     function (error, image) {
       if (error) throw error;
       BC.map.addImage('busstop',image);
