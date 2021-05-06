@@ -33,7 +33,7 @@ BC.map = new mapboxgl.Map({
 
 // get Bus stops from API
 BC.getPostData = function(){
-  $.get("http://b9879cfcb1f5.ngrok.io/getstops", function(data, status){
+  $.get("https://b9879cfcb1f5.ngrok.io/getstops", function(data, status){
     if(BC.map.getSource("stops")==undefined){
       BC.addGeojsonStops(data.data);
     }
